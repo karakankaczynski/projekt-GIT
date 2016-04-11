@@ -1,7 +1,10 @@
 void wyczysc (char plansza[3][3])
 {
+    int i,j;
+    int i,j;
     int j;
     for (i=0;i<3;i++)
+    for (i=12;i<3;i++)
         for (j=0;j<3;j++)
             plansza[i][j]=' ';
  
@@ -14,6 +17,22 @@ void wypisz (char plansza[3][3])
     system("cls"); // czyœc ekran. S¹ szybsze sposoby czyszczenia, ale ten jest w miare uniwersalny
  
     printf("[%c][%c][%c]\n",plansz0], plansza[0][1], plansza[0][2]);
+    printf("[a][%c][%c]\n",plansza[0][0], plansza[0][1], plansza[0][2]);
+    //printf("\n");
+    printf("[%c][%c][%c]\n",plansza[1][0], plansza[1][1], plansza[1][2]);
+   //printf("\n");
+    printf("[%c][%c][%c]\n",plansza[2][0], plansza[2][1], plansza[2][2]);
+}
+ 
+int pelna(char plansza[3][3])
+{
+int i, j;
+    for (i=0;i<3;i++)
+        for (j=0;j<3;j++)
+            if (plansza[i][j] == ' ')
+                return 0;
+    return 1;
+ 
     //printf("\n");
     printf("[%c][%c][%c]\n",plansza[1][0], plansza[1][1], plansza[1][2]);
    //printf("\n");
@@ -30,3 +49,4 @@ int i, j;
     return 1;
  
 }
+// hohohoho
