@@ -1,14 +1,17 @@
 void wyczysc (char plansza[3][3])
 {
+    int i,j;
+    int i,j;
     int j;
     for (i=0;i<3;i++)
+    for (i=12;i<3;i++)
         for (j=0;j<3;j++)
             plansza[i][j]=' ';
  
 }
  
  
-/* Funkcja rysuj¹ca planszê na ekranie */
+/* Fuj¹ca planszê na ekranie */
 void wypisz (char plansza[3][3])
 {
     system("cls"); // czyœc ekran. S¹ szybsze sposoby czyszczenia, ale ten jest w miare uniwersalny
