@@ -6,7 +6,8 @@ void wyczysc (char plansza[3][3])
             plansza[i][j]=' ';
  
 }
- 
+//bylem tu, Kacper Synowiec
+
  
 /* Funkcja rysuj¹ca planszê na ekranie */
 void wypisz (char plansza[3][3])
